@@ -57,7 +57,7 @@ if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'YES') {
   alert(userName + ', You made a wise selection ' + ' I am so awesome at riding bikes!'); console.log(answer4 + ' was the right answer for Question 4.');
 
 } else if (answer4.toLowerCase() === 'n' || answer4.toUpperCase() === 'NO') {
-  alert('I have known how to ride a bike for a long time. ' + userName + ' Imagine how sad it would be to have a childhood with no bikes. ' + ' This time your answer is wrong.');
+  alert('This time your answer is wrong ' + userName + '. I have known how to ride a bike since I was 6. ' + ', Can you imagine how sad childhood would be with no bike rides? ');
   console.log(userName + ' chose ' + answer4 + ' which was not the correct response to Question 4.');
 
 } else {
