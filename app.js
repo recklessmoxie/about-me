@@ -61,21 +61,21 @@ if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'YES') {
   console.log(userName + ' chose ' + answer4 + ' which was not the correct response to Question 4.');
 
 } else {
-  alert('Maybe for the last question you an choose Y or N and be full of win?');
+  alert('Maybe for the next question you can choose Y or N and be full of win?');
 }
 
-var answer5 = prompt('Am I a vegetarian?');
+var answer5 = prompt('Have I ever lived in Denver?');
 console.log(userName + 'answered Question 5 with ' + answer5);
 
 if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'YES') {
-  alert(userName + ', I used to be a vegetarian, but fell off the wagon and into a cheeseburger ' + ' So unfortunately, your answer is incorrect');
-  console.log(answer5 + ' is incorrect for Question 5.');
+  alert(userName + ' you are correct. ' + ' I lived in Denver just before moving to Seattle.');
+  console.log(userName + answer5 + ', which is correct for Question 5.');
 
 } else if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'NO') {
-  alert(userName + ', I am a sad meat eater, so you picked the right answer.');
-  console.log(userName + ' chose ' + answer5 + ' which is the right answer to Question 5.');
+  alert(userName + ', your answer is not correct. ' + ' I did live in Denver for about 5 years before I relocated to Seattle.');
+  console.log(userName + ' chose ' + answer5 + ' which is the wrong answer to Question 5.');
 
 } else {
-  alert('You still did not chose a valid response, you lose');
+  alert('You still did not chose a valid response, you lose! ' + ' What a shame you have not figured out the game yet.');
 
 };
