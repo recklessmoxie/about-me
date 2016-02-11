@@ -84,22 +84,31 @@ alert('Hi there, ' + userName + ', I am going to ask you some questions about me
 // } else {
 //   alert('You did not chose a valid response, you lose! ' + ' What a shame you have not figured out the game.');
 //
-// }
+// }var
+var incorrectAnswer = 0;
 
-while(answer6 !== 37) {
+while(incorrectAnswer < 4) {
   var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully because you only get 4 tries to get it right.'));
-  console.log(userName + 'responded to Question 6 with ' + answer6);
+  console.log(userName + ' responded to Question 6 with ' + answer6);
 
   if (answer6 > 37) {
     alert('Too high!');
     console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
+    incorrectAnswer +=1;
 
   } else if (answer6 < 37) {
     alert('Too low!');
     console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
+    incorrectAnswer +=1;
 
   } else if (answer6 === 37) {
     alert('You got it right. ' + ' Exellent work ' + userName + '!');
     console.log(userName + ' responded correctly to Question 6.');
+    incorrectAnswer +=1;
+
+  } else if (typeof(answer6) === 'number') {
+    alert(userName + ', you did not enter a number value.')
+    console.log(userName + ' answered Question 6 with ' + answer6);
+    incorrectAnswer +=1;
   }
 };
