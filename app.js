@@ -88,7 +88,7 @@ if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'YES') {
 var incorrectAnswer = 0;
 
 while(incorrectAnswer < 4) {
-  var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully because you only get 4 tries to get it right.'));
+  var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries.'));
   console.log(userName + ' responded to Question 6 with ' + answer6);
 
   if (answer6 > 37) {
