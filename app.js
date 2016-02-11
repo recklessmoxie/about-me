@@ -92,11 +92,11 @@ while(answer6 !== 37) {
 
   if (answer6 > 37) {
     alert('Too high!');
-    console.log(userName + 'responded with ' + answer6 + ' to Question 6 which is incorrect.');
+    console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
 
   } else if (answer6 < 37) {
     alert('Too low!');
-    console.log(userName + 'responded with ' + answer6 + ' to Question 6 which is incorrect.');
+    console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
 
   } else if (answer6 === 37) {
     alert('You got it right. ' + ' Exellent work ' + userName + '!');
