@@ -86,51 +86,56 @@ alert('Hi there, ' + userName + ', I am going to ask you some questions about me
 // question4(answer4);
 
 
-function question5(answer5){
+// function question5(answer5) {
+//   console.log(userName + ' answered Question 5 with ' + answer5);
+//
+//   if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'YES') {
+//     alert(userName + ' you are correct. ' + ' I lived in Denver just before moving to Seattle.');
+//     console.log(userName + ' responded with ' + answer5 + ', which the correct answer for Question 5.');
+//
+//   } else if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'NO') {
+//     alert(userName + ', your answer is not correct. ' + ' I did live in Denver for about 5 years before relocating to Seattle.');
+//     console.log(userName + ' responded to Question 5 with ' + answer5 + ' which is incorrect.');
+//
+//   } else {
+//     alert('You did not chose a valid response, you lose! ' + ' What a shame you have not figured out the game.');
+//   }
+// }
+//
+// var answer5 = prompt('Have I ever lived in Denver?');
+// question5(answer5);
 
-  console.log(answer3)
-  console.log(userName + ' answered Question 5 with ' + answer5);
 
-  if (answer5.toLowerCase() === 'y' || answer5.toUpperCase() === 'YES') {
-    alert(userName + ' you are correct. ' + ' I lived in Denver just before moving to Seattle.');
-    console.log(userName + ' responded with ' + answer5 + ', which the correct answer for Question 5.');
+function question6(incorrectAnswer, answer6) {
 
-  } else if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'NO') {
-    alert(userName + ', your answer is not correct. ' + ' I did live in Denver for about 5 years before relocating to Seattle.');
-    console.log(userName + ' responded to Question 5 with ' + answer5 + ' which is incorrect.');
+  while(incorrectAnswer < 4) {
 
-  } else {
-    alert('You did not chose a valid response, you lose! ' + ' What a shame you have not figured out the game.');
+    console.log(userName + ' responded to Question 6 with ' + answer6);
+
+    if (answer6 > 37) {
+      alert('Too high!');
+      console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
+      incorrectAnswer +=1;
+
+    } else if (answer6 < 37) {
+      alert('Too low!');
+      console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
+      incorrectAnswer +=1;
+
+    } else if (answer6 === 37) {
+      alert('You got it right. ' + ' Exellent work ' + userName + '!');
+      console.log(userName + ' responded correctly to Question 6.');
+      incorrectAnswer +=1;
+
+    } else if (typeof(answer6) === 'number') {
+      alert(userName + ', you did not enter a number value.')
+      console.log(userName + ' answered Question 6 with ' + answer6);
+      incorrectAnswer +=1;
+    }
   }
 }
 
-var answer5 = prompt('Have I ever lived in Denver?');
-question5(answer5);
+var incorrectAnswer = 0;
+var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'))
 
-// var incorrectAnswer = 0;
-//
-// while(incorrectAnswer < 4) {
-//   var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'));
-//   console.log(userName + ' responded to Question 6 with ' + answer6);
-//
-//   if (answer6 > 37) {
-//     alert('Too high!');
-//     console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
-//     incorrectAnswer +=1;
-//
-//   } else if (answer6 < 37) {
-//     alert('Too low!');
-//     console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
-//     incorrectAnswer +=1;
-//
-//   } else if (answer6 === 37) {
-//     alert('You got it right. ' + ' Exellent work ' + userName + '!');
-//     console.log(userName + ' responded correctly to Question 6.');
-//     incorrectAnswer +=1;
-//
-//   } else if (typeof(answer6) === 'number') {
-//     alert(userName + ', you did not enter a number value.')
-//     console.log(userName + ' answered Question 6 with ' + answer6);
-//     incorrectAnswer +=1;
-//   }
-// };
+question6(incorrectAnswer, answer6);
