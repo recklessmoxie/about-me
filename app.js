@@ -28,7 +28,7 @@ question1();
 
 
 function question2() {
-  var answer2 = prompt('Do I have any siblings?');
+
   console.log(userName + ' answered Question 2 with ' + answer2);
 
   if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'YES') {
@@ -44,6 +44,7 @@ function question2() {
   }
 }
 
+var answer2 = prompt('Do I have any siblings?');
 question2();
 
 function question3(answer3){
