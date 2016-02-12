@@ -46,8 +46,8 @@ alert('Hi there, ' + userName + ', I am going to ask you some questions about me
 //
 // question2();
 
-function question3(){
-  var answer3 = prompt('Am I older than 18?');
+function question3(answer3){
+
   console.log(userName + ' answered Question 3 with ' + answer3);
 
   if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'YES') {
@@ -63,7 +63,9 @@ function question3(){
   }
 };
 
-question3()
+var answer3 = prompt('Am I older than 18?');
+question3(answer3);
+
 
 // var answer4 = prompt('Do I know how to ride a bike?');
 // console.log(userName + ' responded with ' + answer4 + ' for Question 4.');
