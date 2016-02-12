@@ -46,42 +46,45 @@ alert('Hi there, ' + userName + ', I am going to ask you some questions about me
 //
 // question2();
 
-function question3(answer3){
+// function question3(answer3){
+//
+//   console.log(userName + ' answered Question 3 with ' + answer3);
+//
+//   if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'YES') {
+//     alert('That is the correct answer, nice job! ' + userName);
+//     console.log(userName + ' responded to Question 3 correctly by choosing ' + answer3);
+//
+//   } else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'NO') {
+//     alert('Sorry ' + userName + ', but ' + answer3 + ' is not the correct answer. ' + ' Though I am quite flattered by your response.');
+//     console.log(userName + ' responded to Question 3 with ' + answer3 + ' Which is not correct.');
+//
+//   } else {
+//     alert(userName + ', It is really unfortunate that you do not grasp how to play the game.');
+//   }
+// };
+//
+// var answer3 = prompt('Am I older than 18?');
+// question3(answer3);
 
-  console.log(userName + ' answered Question 3 with ' + answer3);
+function question4(answer4) {
+  console.log(userName + ' responded with ' + answer4 + ' for Question 4.');
 
-  if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'YES') {
-    alert('That is the correct answer, nice job! ' + userName);
-    console.log(userName + ' responded to Question 3 correctly by choosing ' + answer3);
+  if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'YES') {
+    alert(userName + ', You made a wise selection ' + ' I am so awesome at riding bikes!');
+    console.log(answer4 + ' was the correct answer to Question 4.');
 
-  } else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'NO') {
-    alert('Sorry ' + userName + ', but ' + answer3 + ' is not the correct answer. ' + ' Though I am quite flattered by your response.');
-    console.log(userName + ' responded to Question 3 with ' + answer3 + ' Which is not correct.');
+  } else if (answer4.toLowerCase() === 'n' || answer4.toUpperCase() === 'NO') {
+    alert('This time your answer is wrong ' + userName + '. I have known how to ride a bike since I was 6. ' + ' Can you imagine how sad childhood would be with no bike rides? ');
+    console.log(userName + ' responded to Question 4 with ' + answer4 + ' which was not correct.');
 
   } else {
-    alert(userName + ', It is really unfortunate that you do not grasp how to play the game.');
+    alert(userName + ', Maybe for the next question you can choose Y or N and be full of win?');
   }
-};
+}
 
-var answer3 = prompt('Am I older than 18?');
-question3(answer3);
+var answer4 = prompt('Do I know how to ride a bike?');
+question4(answer4);
 
-
-// var answer4 = prompt('Do I know how to ride a bike?');
-// console.log(userName + ' responded with ' + answer4 + ' for Question 4.');
-//
-// if (answer4.toLowerCase() === 'y' || answer4.toUpperCase() === 'YES') {
-//   alert(userName + ', You made a wise selection ' + ' I am so awesome at riding bikes!');
-//   console.log(answer4 + ' was the correct answer to Question 4.');
-//
-// } else if (answer4.toLowerCase() === 'n' || answer4.toUpperCase() === 'NO') {
-//   alert('This time your answer is wrong ' + userName + '. I have known how to ride a bike since I was 6. ' + ' Can you imagine how sad childhood would be with no bike rides? ');
-//   console.log(userName + ' responded to Question 4 with ' + answer4 + ' which was not correct.');
-//
-// } else {
-//   alert(userName + ', Maybe for the next question you can choose Y or N and be full of win?');
-// }
-//
 //
 // var answer5 = prompt('Have I ever lived in Denver?');
 // console.log(userName + ' answered Question 5 with ' + answer5);
