@@ -9,6 +9,7 @@ alert('Hi there, ' + userName + ', I am going to ask you some questions about me
 
 function question1(){
   var pTagOne = document.getElementById('ans-one');
+  console.log(pTagOne + ' ptagOne should be here');
   console.log(userName + ' answered Question 1 with ' + answer1);
 
   if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'YES') {
