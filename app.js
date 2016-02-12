@@ -27,41 +27,44 @@ alert('Hi there, ' + userName + ', I am going to ask you some questions about me
 // question1();
 
 
-function question2() {
-  var answer2 = prompt('Do I have any siblings?');
-  console.log(userName + ' answered Question 2 with ' + answer2);
-
-  if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'YES') {
-    alert('Yes, I have an older sister.');
-    console.log(userName + ' answered Question 2 correctly');
-
-  } else if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'NO') {
-    alert('Sorry that is incorrect, I happen to have an older sister.');
-    console.log(userName + ' answered Question 2 incorrectly');
-
-  } else {
-    alert('You really should work on following directions better!');
-  }
-}
-
-question2();
-
-// var answer3 = prompt('Am I older than 18?');
-// console.log(userName + ' answered Question 3 with ' + answer3);
+// function question2() {
+//   var answer2 = prompt('Do I have any siblings?');
+//   console.log(userName + ' answered Question 2 with ' + answer2);
 //
-// if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'YES') {
-//   alert('That is the correct answer, nice job! ' + userName);
-//   console.log(userName + ' responded to Question 3 correctly by choosing ' + answer3);
+//   if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'YES') {
+//     alert('Yes, I have an older sister.');
+//     console.log(userName + ' answered Question 2 correctly');
 //
-// } else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'NO') {
-//   alert('Sorry ' + userName + ', but ' + answer3 + ' is not the correct answer. ' + ' Though I am quite flattered by your response.');
-//   console.log(userName + ' responded to Question 3 with ' + answer3 + ' Which is not correct.');
+//   } else if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'NO') {
+//     alert('Sorry that is incorrect, I happen to have an older sister.');
+//     console.log(userName + ' answered Question 2 incorrectly');
 //
-// } else {
-//   alert(userName + ', It is really unfortunate that you do not grasp how to play the game.');
+//   } else {
+//     alert('You really should work on following directions better!');
+//   }
 // }
 //
-//
+// question2();
+
+function question3(){
+  var answer3 = prompt('Am I older than 18?');
+  console.log(userName + ' answered Question 3 with ' + answer3);
+
+  if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'YES') {
+    alert('That is the correct answer, nice job! ' + userName);
+    console.log(userName + ' responded to Question 3 correctly by choosing ' + answer3);
+
+  } else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'NO') {
+    alert('Sorry ' + userName + ', but ' + answer3 + ' is not the correct answer. ' + ' Though I am quite flattered by your response.');
+    console.log(userName + ' responded to Question 3 with ' + answer3 + ' Which is not correct.');
+
+  } else {
+    alert(userName + ', It is really unfortunate that you do not grasp how to play the game.');
+  }
+};
+
+question3()
+
 // var answer4 = prompt('Do I know how to ride a bike?');
 // console.log(userName + ' responded with ' + answer4 + ' for Question 4.');
 //
