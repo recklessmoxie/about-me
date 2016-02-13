@@ -6,10 +6,9 @@ var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName );
 alert('Hi there, ' + userName + ', I am going to ask you some questions about me. ' + ' Please answer Y or N');
 
-
+//
 function question1(){
   var pTagOne = document.getElementById('ans-one');
-  console.log(pTagOne + ' ptagOne should be here');
   console.log(userName + ' answered Question 1 with ' + answer1);
 
   if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'YES') {
@@ -110,36 +109,37 @@ function question5(answer5) {
 var answer5 = prompt('Have I ever lived in Denver?');
 question5(answer5);
 
-function question6(incorrectAnswer, answer6) {
+function question6(answer6) {
 
-  while(incorrectAnswer < 4) {
+  var incorrectAnswer = 0;
+
+  while(incorrectAnswer < 4){
+    var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'))
+
     var pTagSix = document.getElementById('ans-six');
     console.log(userName + ' responded to Question 6 with ' + answer6);
 
     if (answer6 > 37) {
-      pTagSix.textContent= 'Too high!';
+      pTagSix.textContent = 'Too high!';
       console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
-      incorrectAnswer +=1;
+      incorrectAnswer += 1;
 
     } else if (answer6 < 37) {
-      pTagSix.textContent= 'Too low!';
+      pTagSix.textContent = 'Too low!';
       console.log(userName + ' responded with ' + answer6 + ' to Question 6 which is incorrect.');
-      incorrectAnswer +=1;
+      incorrectAnswer += 1;
 
     } else if (answer6 === 37) {
       pTagSix.textContent = 'You got it right. ' + ' Exellent work ' + userName + '!';
       console.log(userName + ' responded correctly to Question 6.');
-      incorrectAnswer +=1;
+      incorrectAnswer += 4;
 
     } else if (typeof(answer6) === 'number') {
       pTagSix.textContent = userName + ', you did not enter a number value.';
       console.log(userName + ' answered Question 6 with ' + answer6);
-      incorrectAnswer +=1;
+      incorrectAnswer += 1;
     }
   }
-}
-
-var incorrectAnswer = 0;
+};
 var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'))
-
-question6(incorrectAnswer, answer6);
+question6(answer6);
