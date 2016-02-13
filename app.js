@@ -6,7 +6,7 @@ var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName );
 alert('Hi there, ' + userName + ', I am going to ask you some questions about me. ' + ' Please answer Y or N');
 
-//
+
 function question1(){
   var pTagOne = document.getElementById('ans-one');
   console.log(userName + ' answered Question 1 with ' + answer1);
