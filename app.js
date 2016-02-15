@@ -4,19 +4,19 @@
 
 var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName );
-alert('Hi there, ' + userName + ', I am going to ask you some questions about me. ' + ' Please answer Y or N');
+alert('Hi there, ' + userName + ', I am going to ask you some questions about me. ' + ' Please answer these questions by typing Y or N into the box that will appear. ' + 'Select ok to begin the game!');
 
 
 function question1(){
   var pTagOne = document.getElementById('ans-one');
   console.log(userName + ' answered Question 1 with ' + answer1);
 
-  if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'YES') {
-    pTagOne.textContent = 'That is correct! ' + ' I was born in Tulsa, Oklahoma.';
+  if (answer1.toLowerCase() === 'n' || answer1.toUpperCase() === 'NO') {
+    pTagOne.textContent = 'That is correct! ' + ' Cheese is not a food I enjoy eating.';
     console.log(userName + ' totally nailed Question 1');
 
   } else if (answer1.toLowerCase() === 'n' || answer1.toUpperCase() === 'NO') {
-    pTagOne.textContent = 'Sorry ' + userName + ' you\'re wrong!!!';
+    pTagOne.textContent = 'Sorry ' + userName + ' wrong answer, I really don\'t care much for cheese!';
     console.log(userName + ' did not answer Question 1 correctly');
 
   } else {
@@ -24,7 +24,7 @@ function question1(){
   }
 }
 
-var answer1 = prompt('Was I born in Tulsa, Oklahoma?');
+var answer1 = prompt('Do I like cheese?');
 question1();
 
 
@@ -32,12 +32,12 @@ function question2() {
   var pTagTwo = document.getElementById('ans-two');
   console.log(userName + ' answered Question 2 with ' + answer2);
 
-  if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'YES') {
+  if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'NO') {
     pTagTwo.textContent = 'Yes, I have an older sister.';
     console.log(userName + ' answered Question 2 correctly');
 
-  } else if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'NO') {
-    pTagTwo.textContent = 'Sorry that is incorrect, I happen to have an older sister.';
+  } else if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'YES') {
+    pTagTwo.textContent = 'Sorry that is incorrect, I happen to have an older sister, but no brothers.';
     console.log(userName + ' answered Question 2 incorrectly');
 
   } else {
@@ -45,7 +45,7 @@ function question2() {
   }
 }
 
-var answer2 = prompt('Do I have any siblings?');
+var answer2 = prompt('Do I have an older brother?');
 question2();
 
 function question3(answer3){
@@ -57,7 +57,7 @@ function question3(answer3){
     console.log(userName + ' responded to Question 3 correctly by choosing ' + answer3);
 
   } else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'NO') {
-    pTagThree.textContent = 'That is the correct answer, nice job!' + userName;
+    pTagThree.textContent = 'Sorry that is wrong!' + userName + ' I am older than 18, but I am flatered that you think I could be so young';
     console.log(userName + ' responded to Question 3 with ' + answer3 + ' Which is not correct.');
 
   } else {
@@ -114,7 +114,7 @@ function question6(answer6) {
   var incorrectAnswer = 0;
 
   while(incorrectAnswer < 4){
-    var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'))
+    var answer6 = parseInt(prompt(userName + ', you learned earlier that I am older than 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'))
 
     var pTagSix = document.getElementById('ans-six');
     console.log(userName + ' responded to Question 6 with ' + answer6);
@@ -141,5 +141,5 @@ function question6(answer6) {
     }
   }
 };
-var answer6 = parseInt(prompt(userName + ', you learned earlier that I am not 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'))
+var answer6 = parseInt(prompt(userName + ', you learned earlier that I am older than 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'))
 question6(answer6);
