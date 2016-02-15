@@ -15,7 +15,7 @@ function question1(){
     pTagOne.textContent = 'That is correct! ' + ' Cheese is not a food I enjoy eating.';
     console.log(userName + ' totally nailed Question 1');
 
-  } else if (answer1.toLowerCase() === 'n' || answer1.toUpperCase() === 'NO') {
+  } else if (answer1.toLowerCase() === 'y' || answer1.toUpperCase() === 'YES') {
     pTagOne.textContent = 'Sorry ' + userName + ' wrong answer, I really don\'t care much for cheese!';
     console.log(userName + ' did not answer Question 1 correctly');
 
@@ -33,7 +33,7 @@ function question2() {
   console.log(userName + ' answered Question 2 with ' + answer2);
 
   if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'NO') {
-    pTagTwo.textContent = 'Yes, I have an older sister.';
+    pTagTwo.textContent = 'You are correct, no brothers for me, but I do have an older sister.';
     console.log(userName + ' answered Question 2 correctly');
 
   } else if (answer2.toLowerCase() === 'y' || answer2.toUpperCase() === 'YES') {
@@ -53,11 +53,11 @@ function question3(answer3){
   console.log(userName + ' answered Question 3 with ' + answer3);
 
   if (answer3.toLowerCase() === 'y' || answer3.toUpperCase() === 'YES') {
-    pTagThree.textContent = 'That is the correct answer, nice job!' + userName;
+    pTagThree.textContent = 'That is the correct answer, nice job! ' + userName;
     console.log(userName + ' responded to Question 3 correctly by choosing ' + answer3);
 
   } else if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'NO') {
-    pTagThree.textContent = 'Sorry that is wrong!' + userName + ' I am older than 18, but I am flatered that you think I could be so young';
+    pTagThree.textContent = 'Sorry that is wrong! ' + userName + ' I am older than 18, but I am flatered that you think I could be so young.';
     console.log(userName + ' responded to Question 3 with ' + answer3 + ' Which is not correct.');
 
   } else {
@@ -114,7 +114,7 @@ function question6(answer6) {
   var incorrectAnswer = 0;
 
   while(incorrectAnswer < 4){
-    var answer6 = parseInt(prompt(userName + ', you learned earlier that I am older than 18.' + ' How old do you think I am? ' + ' Guess carefully, because you only get 4 tries'))
+    var answer6 = parseInt(prompt(userName + ', you guessed incorrectly. ' + ' Give it another shot and maybe you will get it this time.'))
 
     var pTagSix = document.getElementById('ans-six');
     console.log(userName + ' responded to Question 6 with ' + answer6);
