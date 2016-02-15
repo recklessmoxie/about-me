@@ -113,7 +113,7 @@ function question6(answer6) {
 
   var incorrectAnswer = 0;
 
-  while(incorrectAnswer < 4){
+  while(incorrectAnswer < 3){
     var answer6 = parseInt(prompt(userName + ', you guessed incorrectly. ' + ' Give it another shot and maybe you will get it this time.'))
 
     var pTagSix = document.getElementById('ans-six');
